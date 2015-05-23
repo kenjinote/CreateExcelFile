@@ -74,14 +74,6 @@ BOOL CreateExcelFile(LPCTSTR lpszFilePath)
 		return FALSE;
 	}
 
-	// Make it visible (i.e. app.visible = 1)
-	{
-		VARIANT x;
-		x.vt = VT_I4;
-		x.lVal = 1;
-		AutoWrap(DISPATCH_PROPERTYPUT, NULL, pXlApp, L"Visible", 1, x);
-	}
-
 	// Get Workbooks collection
 	IDispatch *pXlBooks;
 	{
