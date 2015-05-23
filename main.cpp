@@ -1,6 +1,6 @@
 #define UNICODE
 #pragma comment(linker,"/opt:nowin98")
-#include<windows.h>
+#include <windows.h>
 #include <ole2.h>
 
 TCHAR szClassName[] = TEXT("CreateExcelFile");
