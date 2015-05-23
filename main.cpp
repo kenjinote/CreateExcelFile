@@ -1,5 +1,4 @@
 #define UNICODE
-#pragma comment(linker,"/opt:nowin98")
 #include <windows.h>
 #include <ole2.h>
 
